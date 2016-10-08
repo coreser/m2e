@@ -92,8 +92,6 @@ protected function makeTask($taskPath)
   } else {
     $taskPath = ($this->isComponentTask() ? ucfirst($this->getComponent()).'_' : '').'Synchronization_'.$taskPath;
   }
-  
-  $taskPath = ($this->isComponentTask() ? ucfirst($this->getComponent()).'_' : '').'Synchronization_'.$taskPath;
 
   /** @var $task Ess_M2ePro_Model_Synchronization_Task **/
   $task = Mage::getModel('M2ePro/'.$taskPath);
